@@ -3,3 +3,10 @@
     background-color:gold;
     border: 2px solid rebeccapurple;
 }
+
+/*https://datacadamia.com/web/dom/event/click*/
+a { border-radius:50%;
+    background:deepskyblue;
+    padding:1rem;
+    display:inline-block ;
+}

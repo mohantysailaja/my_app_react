@@ -20,9 +20,15 @@ btnclick.addEventListener("click",function clickEventHandler(){
 function myFunction(){
  document.getElementById("demoprint").innerHTML = Date();
 }
-myFunction();
+//myFunction();//this line gives me "Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')" error so commented 
 
 
+//math operation
+/*function myFunctionOP(p1, p2) {
+    return p1 * p2;
+  }
+  document.getElementById("printoperation").innerHTML = myFunctionOP(4, 3);
+*/
 //https://codedamn.com/news/javascript/fixing-cannot-read-property-addeventlistener-of-null-error-in-javascript*/
 /*const btnclick = document.querySelector("#btnclick");
 // there is no anchor tag in our HTML file with id "no_link"

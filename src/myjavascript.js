@@ -22,13 +22,17 @@ function myFunction(){
 }
 //myFunction();//this line gives me "Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')" error so commented 
 
-
+/*function funcCar(){
+const car = {type:"Fiat", model:"500", color:"white"};
+document.getElementById("printoperation").innerHTML = "The car type is " + car.type;
+}*/
 //math operation
 /*function myFunctionOP(p1, p2) {
     return p1 * p2;
   }
-  document.getElementById("printoperation").innerHTML = myFunctionOP(4, 3);
-*/
+  var result =myFunctionOP(4,3);
+   document.getElementById("printoperation").innerHTML = result;*/
+
 //https://codedamn.com/news/javascript/fixing-cannot-read-property-addeventlistener-of-null-error-in-javascript*/
 /*const btnclick = document.querySelector("#btnclick");
 // there is no anchor tag in our HTML file with id "no_link"

@@ -16,3 +16,19 @@ p{
     height: 100%;
     width: 120%;
 }
+/*when you hover over the link,it changes the colour*/
+ a:hover{
+    color: red;
+ }
+ a.highlight:hover{
+    color: red;
+    font-size: 10px;
+ }
+ p{
+    display: none;
+    background-color: orange;
+    padding: 5px;
+ }
+ div:hover p{
+    display: block;
+}

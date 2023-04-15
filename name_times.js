@@ -40,7 +40,7 @@ for(i = 0; i <= 5 ;i ++){
         stars += "*";
     }
     
-    console.log(stars);
+    console.log(stars);//shows pattern
 }
 //https://www.freecodecamp.org/news/how-to-install-node-js-and-npm-on-windows-2/
 //https://create-react-app.dev/docs/getting-started

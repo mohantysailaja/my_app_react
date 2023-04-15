@@ -11,4 +11,5 @@ function fizzBuzz(num)
         console.log(i);
     }
 }
-fizzBuzz(56);
+fizzBuzz(67);
+

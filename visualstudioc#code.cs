@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,6 +16,7 @@ namespace ConsoleApp1
         private string model, color, steering, brand, feature;
 
         //declaring constructor here with the same name as class
+        // Create a  constructor for the Program class
         public Program()
         {
             model = "Hyndai-i-30";
@@ -22,16 +25,60 @@ namespace ConsoleApp1
             brand = "Hyundai";
             feature = "Auto pilot";
         }
+        //created a new class named testJson and accessing 
+        public class testJson
+            {
+            public int id;
+            public string name;
+            public string dependency;
 
+            //creating consrtuctor
+            public testJson()
+            {
+                this.id = 1;
+                this.name = "test";
+                this.dependency = "yes";
+            }
+            
+
+        }
         public static void Main(string[] args)
         {
+            testJson objJson = new testJson();//created object for the testJson class
+            Console.WriteLine(objJson.name);//printed and tested
+            //foreach (string i in objJson)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //array
+            string[] myArray = new string[] {"flowers" ,"roses","daffodils","dandeleon","dailsy"};
+            Console.WriteLine(myArray.Length);
 
+            foreach (string i in  myArray)
+            {
+                Console.WriteLine(i);
+            }
+           // Console.WriteLine(myArray[0]);//for one line console print//
+            //ends here
+
+            /*for loop
+            for (int i =0;i <=5;i ++)
+            {
+                Console.WriteLine(myArray[i]);
+            }
+            */
+            //ends here
             //Linkedlist
             string[] words = { "the", "fox", "jumps", "over", "the", "dog" };
 
-            LinkedList<string> list = new LinkedList<string>();
+            LinkedList<string> listsentence = new LinkedList<string>(words);
+            foreach(string word in listsentence)
+            {
+                Console.WriteLine(word);
+            }
             
             //ends here
+
             //Arraylist
             ArrayList myAL = new ArrayList();
             myAL.Add(1);
@@ -94,7 +141,7 @@ namespace ConsoleApp1
 
 
 
-            Program myObj = new Program();
+            Program myObj = new Program();//create an object of the class 
             Console.WriteLine(myObj.model);
             Console.WriteLine(myObj.color);
             Console.WriteLine(myObj.steering);

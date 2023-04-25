@@ -31,7 +31,7 @@ namespace ConsoleApp1
             public int id;
             public string name;
             public string dependency;
-
+            
             //creating consrtuctor
             public testJson()
             {
@@ -44,6 +44,49 @@ namespace ConsoleApp1
         }
         public static void Main(string[] args)
         {
+            //type casting
+            int testInt = 9;
+            double myDouble = testInt;//automatic casting: int to double
+            Console.WriteLine(myDouble);
+            Console.WriteLine(testInt);
+            //ends here
+
+
+
+            //try catch 
+            
+            try
+            {
+                int[] myInt = { 1, 2, 3, 4 };
+                Console.WriteLine(myInt[10]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());//got error "index was outside bounds of the array as 10 is outside
+            }
+
+            //ends here
+            //calling object to objTest clas to main method to access it's fields
+            myTest objTest = new myTest();
+            Console.WriteLine(objTest.books);
+            Console.WriteLine(objTest.music);
+            //ends here
+            
+            
+            for (int i =0; i <=10; i ++)
+            {
+                if(i == 4)
+                {
+                    //break;
+                    continue;
+                }
+                Console.WriteLine(i);
+            }
+            
+            
+            
+             
+
             testJson objJson = new testJson();//created object for the testJson class
             Console.WriteLine(objJson.name);//printed and tested
             //foreach (string i in objJson)
@@ -163,6 +206,14 @@ namespace ConsoleApp1
             }
         }
 
-
+  public class myTest
+        {
+           public string books, music;//created fields
+            public myTest()//constructor created
+            {
+                books = "story";
+                music = "guitar";
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ConsoleApp1
 {
     public class Program
@@ -44,6 +45,18 @@ namespace ConsoleApp1
         }
         public static void Main(string[] args)
         {
+
+            //generic class declared below
+            MyGenericClass<int> integerGenericClass = new MyGenericClass<int>(10);
+            int val = integerGenericClass.GenericMethod(200);
+            Console.WriteLine(val);
+            Console.ReadKey();
+            
+            //ends here
+
+
+
+
             //type casting
             int testInt = 9;
             double myDouble = testInt;//automatic casting: int to double
@@ -215,5 +228,20 @@ namespace ConsoleApp1
                 music = "guitar";
             }
         }
+        class MyGenericClass<T>
+        {
+            private T GenericMemberVariable;
+            public MyGenericClass(T value)
+            {
+                GenericMemberVariable = value;
+            }
+            public T GenericMethod(T GenericParameter)
+            {
+                Console.WriteLine($"Prameter type: {typeof(T).ToString()},value: {GenericParameter}");
+                Console.WriteLine($"Return type: {typeof(T).ToString()},value: {GenericMemberVariable}");
+                return GenericMemberVariable;
+            }
+          //  public GenericProperty {get; set;};//throws error need to fix this
+        }       
     }
 }

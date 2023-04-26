@@ -22,3 +22,14 @@ for (let i = 0; i < 5; i++) {
 document.getElementById("demo").innerHTML = text;
 */
 
+/*
+//https://www.scaler.com/topics/javascript-let-keyword/
+function print()
+{
+    let num = 12;
+    document.write("Num inside the function= " + num);
+}
+print();
+//Num inside the function = 12
+document.write("Num outside the function = " + num); //Since num is outside scope so will not give any output.
+*/

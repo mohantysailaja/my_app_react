@@ -46,6 +46,35 @@ namespace ConsoleApp1
         public static void Main(string[] args)
         {
 
+            //boxing and unboxing
+            //int i = 123;
+            //object o = i;//this boxes i 
+
+            //unboxing 
+            //o = 123;
+            //i = (int)o;//unboxing
+
+            int b = 123;
+
+            // Boxing copies the value of i into object o.
+            object o = b;
+
+            // Change the value of i.
+            b = 456;
+
+            // The change in i doesn't affect the value stored in o.
+            System.Console.WriteLine("The value-type value = {0}", b);
+            System.Console.WriteLine("The object-type value = {0}", o);
+            /* Output:
+        The value-type value = 456
+        The object-type value = 123
+            //https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing
+    */
+
+
+            //ends here
+
+
             //generic class declared below
             MyGenericClass<int> integerGenericClass = new MyGenericClass<int>(10);
             int val = integerGenericClass.GenericMethod(200);

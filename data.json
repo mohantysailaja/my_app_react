@@ -1,0 +1,14 @@
+{
+    "name": "John",
+    "age": 25,
+    "location": {
+      "city": "New York",
+      "state": "NY",
+      "country": "USA"
+    },
+    "hobbies": [
+      "reading",
+      "hiking",
+      "cooking"
+    ]
+  }

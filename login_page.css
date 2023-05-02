@@ -1,0 +1,14 @@
+body{
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    color: blue;
+    border: 2px;
+    cursor: pointer;
+}
+.btnreg{
+  color: blue;
+  font-style: normal;
+  background-color: antiquewhite;
+  border-radius: 20px;
+}

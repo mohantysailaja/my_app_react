@@ -10,4 +10,6 @@ function clickHandler(){
     console.log("input",txtInput.value);
 };
 btnTranslate.addEventListener("click",clickHandler)
-//
+//w3schools
+document.querySelector("#demo").innerHTML = "Hello World!";
+document.querySelector("h3, h4").style.backgroundColor = "skyblue";

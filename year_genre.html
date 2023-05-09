@@ -1,0 +1,37 @@
+<form id="filter-form">
+    <div class="form-group">
+      <label for="year-select">Year:</label>
+      <select class="form-control" id="year-select">
+        <option value="">All years</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="genre-select">Genre:</label>
+      <select class="form-control" id="genre-select">
+        <option value="">All genres</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="type-select">Type:</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="type" id="movies-radio" value="movies" checked>
+        <label class="form-check-label" for="movies-radio">
+          Movies
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="type" id="books-radio" value="books">
+        <label class="form-check-label" for="books-radio">
+          Books
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Filter</button>
+    <button type="button" class="btn btn-secondary" id="clear-filters-btn">Clear filters</button>
+  </form>

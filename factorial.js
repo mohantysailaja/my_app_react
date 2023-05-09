@@ -15,7 +15,7 @@ return result;
 }
 }
 //to verify the result comes correct or not //testing
-let num =4;
+let num =7;
 var result = factorialNum(num);
 console.log("the factorial of 4 is " ,result);
 
